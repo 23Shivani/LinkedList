@@ -25,6 +25,7 @@ public class LinkedList {
 		newNode.next = head;
 		head = newNode;
 	}
+	
 	public void print() {
 		MyNode tempNode = head;
 		while(tempNode.next != null) {
@@ -33,4 +34,18 @@ public class LinkedList {
 		}
 		System.out.println(tempNode.data);
 	}
+	public void insert(int data) {
+		MyNode newNode = new MyNode();
+		newNode.data = data;
+		newNode.next = null;
+		if(head == null) {
+			this.head = newNode;
+		}
+		else {
+			MyNode tempNode = head.next;
+			head.next = newNode;
+			newNode.next = tempNode;
+		}
+	}
+
 }

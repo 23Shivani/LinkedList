@@ -24,4 +24,5 @@ public class MyNode {
 	public MyNode getNext() {
 		return next;
 	}
+
 }
