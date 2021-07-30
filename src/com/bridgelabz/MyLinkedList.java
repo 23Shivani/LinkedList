@@ -7,6 +7,7 @@ public class MyLinkedList {
 		linkedList.append(56);
 		linkedList.append(70);
 		linkedList.insert(30);
+		linkedList.delete();
 		linkedList.print();
 
 	}
